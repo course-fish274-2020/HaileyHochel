@@ -17,9 +17,13 @@ fish_data_cat_clean <- filter(fish_data_cat, scalelength > 1)
 
 library(ggplot2)
 
-#pulling code from github
+#pulling code from github and modify to narrow range of scale size classes
 
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+  geom_histogram(binwidth = 80)
 
-#
+
+
+
+
+       
