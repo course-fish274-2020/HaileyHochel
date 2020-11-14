@@ -13,3 +13,13 @@ fish_data_cat <- fish.data %>%
 
 fish_data_cat_clean <- filter(fish_data_cat, scalelength > 1)
 
+#load ggplot 
+
+library(ggplot2)
+
+#pulling code from github
+
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
+
+#
